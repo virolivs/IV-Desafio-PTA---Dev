@@ -1,5 +1,5 @@
 import express from 'express';
-import UserController from '@controllers/RestaurantController'
+import RestaurantController from '@controllers/RestaurantController'
 
 const routes = express.Router();
 const RestaurantController = new RestaurantController();
