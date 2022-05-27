@@ -1,13 +1,13 @@
 import express from 'express';
-import UserController from '@controllers/UserController'
+import UserController from '@controllers/RestaurantController'
 
 const routes = express.Router();
-const userController = new UserController();
+const RestaurantController = new RestaurantController();
 
-routes.post('/user', userController.create);
-routes.get('/user', userController.get);
-routes.delete('/user/:id', userController.delete);
-routes.put('/user/:id', userController.update);
+routes.post('/restaurant', RestaurantController.create);
+routes.get('/restaurant', RestaurantController.get);
+routes.delete('/restaurant/:id', RestaurantController.delete);
+routes.put('/restaurant/:id', RestaurantController.update);
 
 
 export default routes;
